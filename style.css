@@ -30,3 +30,20 @@ a{
     padding-right: 10px;
     font-size: 22px;
 }
+
+.pictures{
+    display: flex;
+    background-color: #5ad6d2;
+}
+
+.column{
+    flex: 25%;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
