@@ -9,9 +9,24 @@
     font-size: 40px;
     width: 360px;
     height: px;
-    background-color: rgb(90, 214, 210);
+    background-color: #5ad6d2;
     color: rgb(66, 71, 79);
     padding-top: 15px;
     padding-left: 55px;
     margin-top: 35px;
+}
+
+.header-links{
+    text-align: right;
+}
+
+li{
+    display: inline
+}
+
+a{
+    text-decoration: none;
+    color: #5ad6d2;
+    padding-right: 10px;
+    font-size: 22px;
 }
