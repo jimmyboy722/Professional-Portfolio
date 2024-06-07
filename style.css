@@ -3,6 +3,8 @@
     color: #5ad6d2;
     padding: 20px 5%;
     height: auto;
+    position: fixed
+    width: 100%;
 }
 
 .page-header h1{
