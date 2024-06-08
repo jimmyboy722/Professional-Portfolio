@@ -1,3 +1,5 @@
+/* HEADER */
+
 .page-header{
     background-color: #42474f;
     color: #5ad6d2;
@@ -35,6 +37,7 @@ a{
     font-size: 22px;
 }
 
+/* HERO PICTURES SECTION */
 .pictures{
     display: flex;
     background-color: #5ad6d2;
@@ -44,6 +47,35 @@ a{
     flex: 25%;
     flex-wrap: wrap;
     padding: 2px;
+}
+
+/* MAIN SECTION */
+
+.main-section{
+    max-width: 75%;
+    background-color: #42474f;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+/* WORK SECTION */
+
+.work-figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.landing-page{
+    background-image: url("./Images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg");
+}
+
+.project-1{
+
+}
+
+.project-2{
+
 }
 
 @media screen and (max-width: 500px) {
