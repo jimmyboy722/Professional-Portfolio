@@ -45,11 +45,20 @@ a{
 
 .column{
     flex: 25%;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 2px;
 }
 
 /* MAIN SECTION */
+.main-section{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 75%;
+    background-color: #42474f;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 .main-content{
     margin: 10px;
@@ -59,27 +68,23 @@ a{
     justify-content: space-evenly;
     align-items:stretch;
 }
-.main-section{
-    display: flex;
-    max-width: 75%;
-    background-color: #42474f;
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    }
     
-.main-section h2{
+.main-content > h2{
     flex: 0 0 20%;
     text-align: right;
-    border: 0 10px 0 0 solid color:#42474f;
+    border: 0 10px 0 0 solid color: #42474f;
     background-color: #fff;
     color: #42474f;
     margin-left: 10px;
     font-size: 20px;
     }
+
+.main-content div{
+    flex: 0 0 75%;
+}
 /* WORK SECTION */
 
-.work-figure{
+.work-figures{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -89,7 +94,7 @@ a{
 }
 
 .project-1{
-    background-image: url();
+    background-image: url("./Images/webfactory-ltd-NoOrDKxUfzo-unsplash.jpg");
 }
 
 .project-2{
