@@ -50,27 +50,27 @@ a{
 }
 
 /* MAIN SECTION */
-.main-section{
-    max-width: 75%;
-    color: #42474f;
-    margin-left: auto;
-    margin-right: auto;
-    }
+/* .main-section{ */
+    /* max-width: 75%; */
+    /* color: #42474f; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* } */
 
-.main-content{
-    margin: 10px;
-    padding: 20px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items:stretch;
-}
+/* .main-content{ */
+    /* margin: 10px; */
+    /* padding: 20px 0px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    /* align-items:stretch; */
+/* } */
 
-.main-content > div{
+/* .main-content > div{
     flex: 0 0 75%;
-    }
+    } */
 
-.main-content > h2{
+/* .main-content > h2{
     flex: 0 0 20%;
     text-wrap:pretty;
     text-decoration: underline;
@@ -79,11 +79,11 @@ a{
     color: #42474f;
     margin-right: 20px;
     font-size: 20px;
-    }
+    } */
 
 /* WORK SECTION */
 
-.work-figures{
+/* .work-figures{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,8 +97,8 @@ margin: 1em;
 background-size: 100%;
 font-size: 1rem;
 min-height: 400px;
-flex-basis: 100%;
-}
+flex-basis: 100%; */
+/* }
 .app-1st{
     background-image: url(./Images/Landing page.png);
 }
@@ -112,11 +112,43 @@ padding: 10px 10px;
 }
 
 #project-2{
+
     background-image: url("./Images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg");
+} */
+.main-section{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-  }
+.about-me{
+    height: 200px;
+}
+
+.landing-page{
+    height: 150px;
+    width: 100%;
+    background: #42474f;
+    color: aliceblue;
+}
+
+.project-1{
+    background: tomato;
+    height: 80px;
+    width: 50%;
+}
+
+.project-2{
+background: gold;
+height: 80px;
+width: 50%;
+}
+
+.contact-me{
+    background: #5ad6d2;
+    height: 100px;
+    width: 100%;
+}
