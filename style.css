@@ -1,22 +1,30 @@
+:root {
+    --aqua: #5ad6d2;
+    --gray: #42474f;
+    --white: #fffefc;
+}
+
 /* HEADER */
 
 .page-header{
-    background-color: #42474f;
-    color: #5ad6d2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--gray);
     padding: 20px 5%;
     height: auto;
-    position: fixed
     width: 100%;
 }
 
+/* NOT SURE WHY MY HI TEXT COLOR IS NOT APPLYING */
+
 .page-header h1{
     font-size: 40px;
-    position: relative;
-    top: 40px;
+    font-style: italic;
     width: 360px;
     height: 70px;
-    background-color: #5ad6d2;
-    color: rgb(66, 71, 79);
+    background-color: var(--aqua);
+    color: var(--gray)
     padding-top: 20px;
     padding-left: 55px;
     border-radius: 18px 0 ;
@@ -32,7 +40,7 @@ li{
 
 a{
     text-decoration: none;
-    color: #5ad6d2;
+    color: var(--aqua);
     padding-right: 10px;
     font-size: 22px;
 }
@@ -40,7 +48,7 @@ a{
 /* HERO PICTURES SECTION */
 .pictures{
     display: flex;
-    background-color: #5ad6d2;
+    background-color: var(--aqua);
 }
 
 .column{
@@ -49,75 +57,15 @@ a{
     padding: 2px;
 }
 
-/* MAIN SECTION */
-/* .main-section{ */
-    /* max-width: 75%; */
-    /* color: #42474f; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* } */
+/* MAIN SECTION AFTER PICTURES */
 
-/* .main-content{ */
-    /* margin: 10px; */
-    /* padding: 20px 0px; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-evenly; */
-    /* align-items:stretch; */
-/* } */
-
-/* .main-content > div{
-    flex: 0 0 75%;
-    } */
-
-/* .main-content > h2{
-    flex: 0 0 20%;
-    text-wrap:pretty;
-    text-decoration: underline;
-    border: 0 10px 0 0 solid color: #42474f;
-    background-color: #fff;
-    color: #42474f;
-    margin-right: 20px;
-    font-size: 20px;
-    } */
-
-/* WORK SECTION */
-
-/* .work-figures{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.app-1st{
-border: 10px solid #5ad6d2;
-display: flex;
-align-items: flex-end;
-margin: 1em;
-background-size: 100%;
-font-size: 1rem;
-min-height: 400px;
-flex-basis: 100%; */
-/* }
-.app-1st{
-    background-image: url(./Images/Landing page.png);
-}
-
-.app{
-padding: 10px 10px;
-}
-
-#project-1{
-    background-size: cover;
-}
-
-#project-2{
-
-    background-image: url("./Images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg");
-} */
 .main-section{
     display: flex;
     flex-flow: row wrap;
+    text-align: center;
+}
+
+.main-section>*{
     padding: 10px;
     margin: 10px;
     flex: 1 100%;
@@ -125,30 +73,72 @@ padding: 10px 10px;
 }
 
 .about-me{
-    height: 200px;
+    height: 300px;
+    text-align: left;
+    font-size: 25px;
 }
 
 .landing-page{
     height: 150px;
     width: 100%;
-    background: #42474f;
-    color: aliceblue;
+    background-image: url(./Images/Landing\ page.png);
+    background-size: cover;
 }
 
 .project-1{
-    background: tomato;
+    color: var(--white);
+    background-image: url(./Images/webfactory-ltd-NoOrDKxUfzo-unsplash.jpg);
+    background-size: cover;
     height: 80px;
     width: 50%;
 }
 
 .project-2{
-background: gold;
+    color: var(--white);
+    background-image: url(./Images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg);
+    background-size: cover;
 height: 80px;
 width: 50%;
 }
 
 .contact-me{
-    background: #5ad6d2;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--aqua);
+    color: var(--gray);
     height: 100px;
     width: 100%;
 }
+
+@media screen and (min-width: 800px) {
+    .landing-page{
+        flex: 3;
+    }
+
+    .project-1{
+        order: 1;
+    }
+
+    .project-2{
+        order: 2;
+    }
+    
+    .landing-page{
+        order: 2;
+    }
+
+    .contact-me{
+        order: 4;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .project-1{
+        flex: 1;
+}
+
+    .project-2{
+        flex: 1;
+}
+}
+    
