@@ -78,11 +78,12 @@ a{
     font-size: 25px;
 }
 
-.landing-page{
+.refactoring-project{
     height: 150px;
-    width: 100%;
-    background-image: url(./Images/Landing\ page.png);
+    width: 60%;
+    background-image: url(./Images/01-html-css-git-homework-demo.png);
     background-size: cover;
+    color: var(--gray);
 }
 
 .project-1{
@@ -104,6 +105,7 @@ width: 50%;
 .contact-me{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     background: var(--aqua);
     color: var(--gray);
     height: 100px;
